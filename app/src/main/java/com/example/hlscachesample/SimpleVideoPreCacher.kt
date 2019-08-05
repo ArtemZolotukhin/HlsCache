@@ -30,7 +30,6 @@ open class SimpleVideoPreCacher(
         val dataSource = dataSourceFactory.createDataSource()
         cache(dataSpec, cache, dataSource)
         log("cache url - $uri")
-        logW("Error cache is null")
     }
 
     private fun cache(

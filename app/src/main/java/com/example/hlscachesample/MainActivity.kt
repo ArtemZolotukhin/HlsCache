@@ -39,8 +39,10 @@ class MainActivity : AppCompatActivity() {
 
         val precacher = SimpleVideoPreCacher(cache, dataSourceFactory)
 
+//        val firstSource = "https://asazin-cache.cdnvideo.ru/asazin/interactive/com.movika.tutorial/240p/7DA89013-2DEB-49AC-B892-2AFD7C7BE205_240p.mp4"
+//        val secondSource = "https://asazin-cache.cdnvideo.ru/asazin/interactive/com.movika.tutorial/240p/FF57313A-658E-4B3E-9D15-7F09F69EB81C_240p.mp4"
         val firstSource = "https://asazin-cache.cdnvideo.ru/asazin/test/hls/395.m3u8"
-        val secondSource = "https://asazin-cache.cdnvideo.ru/asazin/test/hls/435.m3u8"
+        val secondSource = "https://asazin-cache.cdnvideo.ru/asazin/test/hls/418.m3u8"
 
         val concatenatingMediaSource = ConcatenatingMediaSource()
         concatenatingMediaSource.addMediaSource(createMediaSource(firstSource, dataSourceFactory), handler) {
